@@ -1,8 +1,83 @@
 <html>
 <body>
+    <style>
+		body {
+			background-color: #F7F7F7;
+			background-image: url('https://img.freepik.com/free-photo/beautiful-female-student-showing-vsign-smiling-happy-holding-notebooks-with-study-material-atten_1258-119764.jpg?w=1380&t=st=1679894670~exp=1679895270~hmac=dc15164d0f6424ebcd4bc944a9f08fceff8a156e034bdf31c369e4a22984836c');
+			background-repeat: no-repeat;
+			background-size: contain;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			background-color: #FFFFFF;
+			border-radius: 10px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+			margin: 50px auto;
+			max-width: 500px;
+			padding: 20px;
+		}
+
+		h1 {
+			color: #333333;
+			font-size: 28px;
+			margin: 0 0 20px;
+			text-align: center;
+			text-shadow: 1px 1px #FFFFFF;
+		}
+
+		h2 {
+			color: #333333;
+			font-size: 24px;
+			margin: 20px 0 10px;
+			text-align: center;
+			text-shadow: 1px 1px #FFFFFF;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			margin-top: 20px;
+		}
+
+		label {
+			color: #333333;
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		select, input[type="number"], input[type="submit"] {
+			border-radius: 5px;
+			border: 1px solid #CCCCCC;
+			font-size: 16px;
+			padding: 10px;
+			margin-bottom: 20px;
+			outline: none;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			border: none;
+			color: #FFFFFF;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3E8E41;
+		}
+
+		.placeholder {
+			color: #999999;
+		}
+	</style>
+    
     <div class="login">
        <h1>Student Exam Performance Indicator</h1>
-   
+       <center>
        <form action="{{ url_for('predict_datapoint')}}" method="post">
         <h1>
             <legend>Student Exam Performance Prediction</legend>
@@ -104,6 +179,7 @@
             <input class="btn btn-primary" type="submit" value="Predict your Maths Score" required />
         </div>
     </form>
+</center>
     <h2>
        THE  prediction is {{results}}
     </h2>
