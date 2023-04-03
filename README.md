@@ -10,6 +10,12 @@ Easy-to-use form for inputting student data
 Real-time prediction of math score using machine learning model
 Online images and CSS styling for the design
 
+## Live Demo
+
+You can access a live demo of the application at
+
+### https://studentperformancepredictor.azurewebsites.net/predictdata
+
 ## Installation
 ### Clone the repository
 git clone https://github.com/HarishNandhan/Studentperformancepredictor.git
