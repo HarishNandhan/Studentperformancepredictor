@@ -27,7 +27,7 @@ pip install -r requirements.txt
 python application.py
 
 ### Open the application in your web browser by visiting http://localhost:5000
-
+![Webapp_screenshot](https://github.com/HarishNandhan/Studentperformancepredictor/blob/main/templates/student-performance.jpg)
 ## Usage
 Fill in the form on the home page with the required student data
 Click on the 'Predict your Maths Score' button
